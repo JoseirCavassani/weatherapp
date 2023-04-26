@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <h1>weather</h1>
+            <h1>Weather</h1>
         </nav>
     </header>
     <main>
@@ -24,7 +24,7 @@
 
             <input type="text" id="city" placeholder='Search city'>
 
-            <button onclick="update()">Search</button>
+            <button onclick="update()" class="btn">Search</button>
         </div>
 
         <div class="infos">
@@ -37,19 +37,14 @@
 
         <div class="weather--results">
             <div>
-                <img src="" alt="image weather" id="icon-weather">
-                <span id="description"></span>
-
-            </div>
-            <div>
-                <span id="temp"></span>
-                <span id="feels_like"></span>
-
-            </div>
-            <div>
                 <span id="temp_max"></span>
                 <span id="temp_min"></span>
-
+                <span id="temp"></span>
+                <span id="feels_like"></span>
+            </div>
+            <div>
+                <img src="" alt="image weather" id="icon-weather">
+                <span id="description"></span>
             </div>
         </div>
     </main>

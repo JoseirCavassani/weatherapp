@@ -24,9 +24,9 @@ function openweather(cityName, country) {
         corpo.weather[0].description;
       // temp max
       temp_max = document.getElementById("temp_max").innerHTML =
-        "Temperature Max " + Math.round(corpo.main.temp_max) + "ºC";
+        "Max " + Math.round(corpo.main.temp_max) + "ºC";
       // temp min
       temp_min = document.getElementById("temp_min").innerHTML =
-        "Temperature Min " + Math.round(corpo.main.temp_min) + "ºC";
+        "Min " + Math.round(corpo.main.temp_min) + "ºC";
     });
 }
