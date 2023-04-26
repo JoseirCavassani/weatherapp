@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>weather</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>weather</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="search--location">
+
+            <select name="country" id="country">
+                <!-- options -->
+            </select>
+
+            <input type="text" id="city" placeholder='Search city'>
+
+            <button onclick="update()">Search</button>
+        </div>
+
+        <div class="infos">
+            <span id="country-result"></span>
+            <span id="city-result"></span>
+            <span id="date-time">TIME</span>
+            <span id="infotime">Time in United Kingdom</span>
+        </div>
+
+
+        <div class="weather--results">
+            <div>
+                <img src="" alt="image weather" id="icon-weather">
+                <span id="description"></span>
+
+            </div>
+            <div>
+                <span id="temp"></span>
+                <span id="feels_like"></span>
+
+            </div>
+            <div>
+                <span id="temp_max"></span>
+                <span id="temp_min"></span>
+
+            </div>
+        </div>
+    </main>
+    <script src="country-codes.js"></script>
+    <script src="weather-app.js"></script>
+    <script src="openweather.js"></script>
+</body>
+
+</html>

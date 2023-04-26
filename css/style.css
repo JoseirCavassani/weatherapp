@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pathway Extreme', sans-serif;
+}
+
+
+
+header {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    font-weight: 700;
+}
+
+#icon-weather {
+    width: 100px;
+    height: 100px;
+}
+
+.search--location {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /*  */
+}
+
+#country,
+#city {
+    text-align: center;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 5px;
+    /*  */
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#date-time {
+    color: red;
+    margin-top: 30px;
+}
+
+.weather--results {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    /*  */
+    border-left: 1px solid salmon;
+}
+
+.weather--results>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    padding: 15px;
+    text-transform: capitalize;
+
+}
+
+#country-result,
+#city-result {
+    font-weight: 700;
+    text-transform: capitalize;
+}
