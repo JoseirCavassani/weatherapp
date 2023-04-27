@@ -8,8 +8,10 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    background-color: #B8E7E1;
+
 }
 
 header {
@@ -38,6 +40,7 @@ header {
 #city {
     text-align: center;
     height: 50px;
+    width: 400px;
 }
 
 main {
@@ -55,18 +58,19 @@ main {
     margin-top: 15px;
 }
 
-#date-time {
-    color: red;
-    margin-top: 30px;
-}
 
 .weather--results {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 5px;
     /*  */
-    border-left: 1px solid salmon;
+    border-left: 3px solid salmon;
+    padding: 15px;
+    margin: 15px;
+    position: fixed;
+    top: 350px;
+    width: 100vw;
 }
 
 .weather--results>div {
@@ -96,4 +100,9 @@ main {
 
 #temp {
     font-size: 60px;
+}
+
+.weather--img-description {
+    display: flex;
+    align-items: center;
 }
